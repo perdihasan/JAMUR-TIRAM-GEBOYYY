@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Jamur Tiram Geboy – Segar, Lezat &amp; Berkualitas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#atas">Jamur Tiram Geboy</a>
+<nav><a href="#produk">Produk</a><a href="#kenapa">Kenapa Geboy</a><a href="#mitra">Kemitraan</a><a class="keep" href="#pesan">Pesan</a></nav>
+</header>
+<main id="atas" class="hero">
+<span class="spark" style="left:2%;top:6%" aria-hidden="true">✦</span>
+<span class="spark b" style="right:3%;top:30%" aria-hidden="true">✦</span>
+<img src="logo.jpg" alt="Maskot Jamur Tiram Geboy: jamur tiram berotot mengacungkan jempol" width="720" height="720">
+<div>
+<div class="sign">Kualitas Terbaik!</div>
+<h1 class="pop">Jamur Tiram <span class="fire">GEBOY</span></h1>
+<p>Segar, lezat, dan berkualitas. Dipanen pagi dari kumbung sendiri, siap diantar ke dapurmu. Pesan langsung lewat WhatsApp.</p>
+<a class="wa" href="https://wa.me/6285289696804" aria-label="Chat WhatsApp 085289696804">
+<svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#fff"/><path d="M24 8a16 16 0 0 0-13.8 24L8 40l8.3-2.1A16 16 0 1 0 24 8z" fill="#25d366"/><path d="M18 16c-1 .8-2 2-1.5 4 .8 3.4 4.2 7.5 8.6 9 2 .7 3.4 0 4.2-1l.4-1.6-3.2-1.6-1.4 1.2c-1.6-.7-3.4-2.4-4.2-4l1.2-1.4-1.4-3.2z" fill="#fff"/></svg>
+<span><small>WA / WhatsApp :</small><b>085289696804</b></span>
+</a>
+<div class="cta"><a class="btn hot" href="#produk">Lihat produk</a><a class="btn" href="#mitra">Jadi mitra</a></div>
+</div>
+</main>
+
+<section id="produk">
+<h2 class="pop">Pilih Jamurmu</h2>
+<p class="lead">Atur jumlahnya, pesananmu otomatis tersusun untuk dikirim ke WhatsApp.</p>
+<div class="grid" id="products"></div>
+<div class="order" id="pesan">
+<div><strong>Pesananmu</strong><p id="sum">Belum ada produk dipilih.</p></div>
+<a class="btn hot" id="wa" href="#pesan">Kirim lewat WhatsApp</a>
+</div>
+</section>
+
+<section id="kenapa" class="why">
+<h2 class="pop">Kenapa Geboy?</h2>
+<p class="lead">Tiga janji yang kami jaga di setiap pesanan.</p>
+<div class="grid">
+<div class="plank"><div class="ic" aria-hidden="true">🌿</div><h3>Segar</h3><p>Dipanen pagi hari dan dikemas bersih di hari yang sama.</p></div>
+<div class="plank"><div class="ic" aria-hidden="true">😋</div><h3>Lezat</h3><p>Tekstur padat dan rasa gurih, enak ditumis, digoreng crispy, atau dibuat sup.</p></div>
+<div class="plank"><div class="ic" aria-hidden="true">💪</div><h3>Berkualitas</h3><p>Disortir satu per satu supaya yang sampai ke kamu hanya yang terbaik.</p></div>
+</div>
+</section>
+
+<section id="mitra">
+<div class="mitra">
+<h2 class="pop">Mau Ikut Menanam?</h2>
+<p>Jadi mitra Geboy: kami siapkan baglog dan pelatihan, kamu merawat di rumah, panennya kami beli dengan harga yang disepakati di awal.</p>
+<a class="btn hot" id="wa2" href="#mitra">Tanya soal kemitraan</a>
+</div>
+</section>
+
+<section>
+<h2 class="pop">Cara Pesan</h2>
+<p class="lead"></p>
+<ol class="steps">
+<li>Pilih produk dan jumlahnya di atas.</li>
+<li>Tekan Kirim lewat WhatsApp, pesananmu sudah tertulis otomatis.</li>
+<li>Kami konfirmasi stok, ongkir, dan jadwal antar atau ambil.</li>
+</ol>
+</section>
+</div>
+
+<footer>
+<b>Jamur Tiram Geboy</b>
+<div>Segar, Lezat &amp; Berkualitas! · WA 085289696804</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
