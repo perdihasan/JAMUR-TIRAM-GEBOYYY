@@ -1,0 +1,26 @@
+// Ganti harga sesuai usahamu. Nomor WhatsApp sudah diisi.
+var WA="6285289696804";
+var P=[
+{i:"🍄",n:"Jamur tiram segar 500 g",p:8000,d:"Dipanen pagi, dikemas bersih. Pas untuk tumis dan sup."},
+{i:"🥡",n:"Jamur tiram segar 1 kg",p:15000,d:"Untuk warung, katering, dan keluarga besar."},
+{i:"📦",n:"Baglog siap tumbuh",p:5000,d:"Satu baglog untuk mulai budidaya sendiri."}
+];
+var q=P.map(function(){return 0});
+function rp(x){return "Rp"+Math.round(x).toLocaleString("id-ID")}
+function wa(m){return "https://wa.me/"+WA+"?text="+encodeURIComponent(m)}
+var box=document.getElementById("products");
+P.forEach(function(x,i){
+var c=document.createElement("div");c.className="plank";
+c.innerHTML='<div class="ic" aria-hidden="true">'+x.i+'</div><h3>'+x.n+'</h3><p>'+x.d+'</p><div class="price">'+rp(x.p)+'</div><div class="qty"><button aria-label="Kurangi">−</button><span class="num">0</span><button aria-label="Tambah">+</button></div>';
+var b=c.querySelectorAll("button"),o=c.querySelector(".num");
+b[0].onclick=function(){q[i]=Math.max(0,q[i]-1);o.textContent=q[i];upd()};
+b[1].onclick=function(){q[i]++;o.textContent=q[i];upd()};
+box.appendChild(c)});
+function upd(){
+var t=0,l=[];
+P.forEach(function(x,i){if(q[i]){t+=q[i]*x.p;l.push(q[i]+" × "+x.n)}});
+document.getElementById("sum").textContent=l.length?l.join(", ")+". Total "+rp(t)+" (belum ongkir).":"Belum ada produk dipilih.";
+document.getElementById("wa").href=wa(l.length?"Halo Jamur Tiram Geboy, saya mau pesan:\n"+l.join("\n")+"\nTotal "+rp(t)+".\nAlamat atau jadwal ambil: ":"Halo Jamur Tiram Geboy, saya mau tanya produk.");
+}
+upd();
+document.getElementById("wa2").href=wa("Halo Geboy, saya tertarik jadi mitra budidaya jamur.");
